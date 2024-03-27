@@ -1,0 +1,64 @@
+{
+  "name": "necessitatibusexpedita",
+  "version": "1.0.0",
+  "description": "Isomorphic Javascript client for Polygon.io Stocks, Forex, and Crypto APIs",
+  "main": "lib/main.js",
+  "types": "lib/main.d.ts",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BreanaRyan/necessitatibusexpedita.git"
+  },
+  "keywords": [
+    "polygon.io",
+    "laboriosam",
+    "cupiditate",
+    "ad",
+    "aut"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BreanaRyan/necessitatibusexpedita.git/issues"
+  },
+  "homepage": "https://github.com/BreanaRyan/necessitatibusexpedita.git",
+  "dependencies": {
+    "cross-fetch": "^3.1.4",
+    "query-string": "^7.0.1",
+    "websocket": "^1.0.34"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.11",
+    "@types/sinon": "^10.0.6",
+    "@types/websocket": "^1.0.4",
+    "chai": "^4.3.4",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "mocha": "^9.1.3",
+    "prettier": "^2.5.1",
+    "sinon": "^12.0.1",
+    "ts-node": "^10.4.0",
+    "typedoc": "^0.22.10",
+    "typescript": "^4.5.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "workspaces": [
+    "./lib/*",
+    "./sandbox"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "author": "BrendanYundt"
+}
